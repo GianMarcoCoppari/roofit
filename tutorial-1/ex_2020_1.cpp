@@ -26,5 +26,22 @@ void crystalball(double xmin, double xmax, int entries) {
 	RooRealVar x{"x", "x", xmin, xmax};
 	RooCBShape cb{"cb", "cb", x, mean, sigma, alpha, n};
 
+	// Create a frame for x random variable a plot
+	auto frame = x.frame(Title("Crystal Ball PDF"));
+	cb.plotOn(frame, LineColor(kRed));
+
+	// Generate a dataset of 1000 events in x from gauss
+	// int const nentries{ 10000 };
+	auto data = cb.generate(x, nentries);
+
+	// Make a second plot frame in x and draw both the
+	// data and the pdf in the frame
+	auto frame2 = x.frame(Title("Crystal Ball PDF with data"));
+	data->plotOn(frame2);
+	cb.plotOn(frame2);
+
+	// Fit pdf to data
+	cb.fitTo(*data);
+
 	
 }
