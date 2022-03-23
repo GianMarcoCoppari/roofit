@@ -60,4 +60,6 @@ void crystalball(double xmin, double xmax, int entries) {
 	gPad->SetLeftMargin(0.15);
 	frame2->GetYaxis()->SetTitleOffset(1.6);
 	frame2->Draw();
+
+	c->Print("ex_2020_1.png");
 }
