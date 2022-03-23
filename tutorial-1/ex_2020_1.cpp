@@ -32,7 +32,7 @@ void crystalball(double xmin, double xmax, int entries) {
 
 	// Generate a dataset of 1000 events in x from gauss
 	// int const nentries{ 10000 };
-	auto data = cb.generate(x, nentries);
+	auto data = cb.generate(x, entries);
 
 	// Make a second plot frame in x and draw both the
 	// data and the pdf in the frame
@@ -43,5 +43,21 @@ void crystalball(double xmin, double xmax, int entries) {
 	// Fit pdf to data
 	cb.fitTo(*data);
 
-	
+	// Print values of mean and sigma (that now reflect fitted values and errors)
+	mean.Print();
+	sigma.Print();
+
+	// Draw all frames on a canvas
+	TCanvas* c = new TCanvas("ex_2020_1", "ex_2020_1", 800, 400);
+	c->Divide(2);
+
+	c->cd(1);
+	gPad->SetLeftMargin(0.15);
+	frame->GetYaxis()->SetTitleOffset(1.6);
+	frame->Draw();
+
+	c->cd(2);
+	gPad->SetLeftMargin(0.15);
+	frame2->GetYaxis()->SetTitleOffset(1.6);
+	frame2->Draw();
 }
