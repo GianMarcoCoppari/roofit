@@ -1,6 +1,6 @@
 # TUTORIAL 1
 
-## EXERCISE 1 - FIT OF A CRYSTAL BALL PDF
+## EXERCISE 1 - FIT OF AN UNBINNED DATASET
 
 ### Part 1
 Edit the macro *roofit_empty.cpp* and, following the comments inside, create a Crystal Ball PDF with 
@@ -21,3 +21,13 @@ _Tips_:
 * Find the definition of _RooCBshape_ in the _ROOT Class reference_
 
 Submit the macro as _ex_2020_1.cpp_ and the image of the canvas in png format.
+
+## EXERCISE 2 - FIT OF A BINNED DATASET
+
+Edit the macro *roofit_empty.cpp* and, following the comments inside, create an Exponential PDF with rate $$\lambda = - 1 / \tau$$ where $$\tau = 3$$ is the *mean lifetime*. Visualize the PDF. 
+Generate a binned dataset of $$1000$$ events (bin width equal to $$0.5$$). Make a Fit with Maximum Likelihood. Visualize the results.
+Tips:
+* Define the mean life as a *RooRealVar* and express the exponential rate using *RooFormulaVar*
+* The binning of the returned *RooDataHist* is controlled by the default binning associated with the observables generated. To set the number of bins in *x* to $$200$$, do e.g. *x.setBins(200)* prior to the call to *generateBinned()*
+
+Submit the macro as *ex_2020_1.cpp* and the image of the canvas in png format.age of the canvas in png format)
