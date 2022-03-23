@@ -41,7 +41,7 @@ void exponential(double xmin, double xmax, int entries, int nbins) {
 	lambda.Print();
 
 	// Draw all frames on a canvas
-	TCanvas* c = new TCanvas("ex_2020_1", "ex_2020_1", 800, 400);
+	TCanvas* c = new TCanvas("ex_2020_2", "ex_2020_2", 800, 400);
 	c->Divide(2);
 
 	c->cd(1);
@@ -54,5 +54,5 @@ void exponential(double xmin, double xmax, int entries, int nbins) {
 	frame2->GetYaxis()->SetTitleOffset(1.6);
 	frame2->Draw();
 
-	// c->Print("ex_2020_1.png");
+	c->Print("ex_2020_2.png");
 }
