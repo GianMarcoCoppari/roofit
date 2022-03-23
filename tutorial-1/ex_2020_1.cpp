@@ -30,6 +30,9 @@ void crystalball(double xmin, double xmax, int entries) {
 	auto frame = x.frame(Title("Crystal Ball PDF"));
 	cb.plotOn(frame, LineColor(kRed));
 
+	// Change the value of sigma to 3
+	sigma.setVal(0.3);
+
 	// Generate a dataset of 1000 events in x from gauss
 	// int const nentries{ 10000 };
 	auto data = cb.generate(x, entries);
