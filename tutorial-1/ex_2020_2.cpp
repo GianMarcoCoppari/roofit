@@ -34,5 +34,25 @@ void exponential(double xmin, double xmax, int entries, int nbins) {
 	data->plotOn(frame2);
 	expo.plotOn(frame2);
 
-	
+	// Fit pdf to data
+	expo.fitTo(*data);
+
+	// Print values of lambda (that now reflect fitted values and errors)
+	lambda.Print();
+
+	// Draw all frames on a canvas
+	TCanvas* c = new TCanvas("ex_2020_1", "ex_2020_1", 800, 400);
+	c->Divide(2);
+
+	c->cd(1);
+	gPad->SetLeftMargin(0.15);
+	frame->GetYaxis()->SetTitleOffset(1.6);
+	frame->Draw();
+
+	c->cd(2);
+	gPad->SetLeftMargin(0.15);
+	frame2->GetYaxis()->SetTitleOffset(1.6);
+	frame2->Draw();
+
+	// c->Print("ex_2020_1.png");
 }
