@@ -37,4 +37,4 @@ _Tips_:
 * define the `RooRealVar` out of the factory, read and import the data from the file and import in the workspace using `RooWorkspace::import()`. 
 * Compare the fitted value with the particle mass reported in the Particle Data Group. You can see how to import data here: https://root.cern.ch/doc/master/rf102__dataimport_8C.html
 
-Submit the macro as `ex_2020_1.cpp` and the image of the canvas in png format.age of the canvas in png format)
+Submit the macro as `ex_12_2.cpp` and the image of the canvas in png format.
