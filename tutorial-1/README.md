@@ -4,10 +4,10 @@
 
 ### Part 1
 Edit the macro `roofit_empty.cpp` and, following the comments inside, create a Crystal Ball PDF with 
-* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}\mu=0,
-* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}\sigma=1,
-* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}\alpah=1.5,
-* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}n=1.5.
+* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}\mu=0),
+* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}\sigma=1),
+* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}\alpah=1.5),
+* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}n=1.5).
 
 Change $$\sigma$$ to $$0.3$$ and visualize the PDF.
 
