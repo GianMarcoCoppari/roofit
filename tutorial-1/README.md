@@ -4,10 +4,10 @@
 
 ### Part 1
 Edit the macro `roofit_empty.cpp` and, following the comments inside, create a Crystal Ball PDF with 
-* $$\mu = 0$$,
-* $$\sigma = 1$$,
-* $$\alpha = 1.5$$,
-* $$n = 1.5$$.
+* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}\mu=0,
+* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}\sigma=1,
+* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}\alpah=1.5,
+* ![formula](https://render.githubusercontent.com/render/math?math=\color{white}n=1.5.
 
 Change $$\sigma$$ to $$0.3$$ and visualize the PDF.
 
@@ -42,4 +42,4 @@ _Tips_:
 * define the `RooRealVar` out of the factory, read and import the data from the file and import in the workspace using `RooWorkspace::import()`. 
 * Compare the fitted value with the particle mass reported in the Particle Data Group. You can see how to import data here: https://root.cern.ch/doc/master/rf102__dataimport_8C.html
 
-Submit the macro as *ex_2020_1.cpp* and the image of the canvas in png format.age of the canvas in png format)
+Submit the macro as `ex_2020_1.cpp` and the image of the canvas in png format.age of the canvas in png format)
